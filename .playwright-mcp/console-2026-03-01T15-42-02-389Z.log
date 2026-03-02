@@ -1,0 +1,1 @@
+[    3248ms] [ERROR] Failed to load resource: the server responded with a status of 405 (Method Not Allowed) @ http://localhost:8001/admin/logout:0

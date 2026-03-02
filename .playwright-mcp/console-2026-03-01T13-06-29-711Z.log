@@ -1,0 +1,688 @@
+[     669ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8001/admin/projects/1/edit:0
+[    1082ms] [WARNING] Alpine Warning: You can't use [x-intersect] without first installing the "Intersect" plugin here: https://alpinejs.dev/plugins/intersect JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2384
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchema is not defined
+
+Expression: "filamentSchema({ livewireId: 'IGj3BQPAkO5rOnrDGkhE' })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchema is not defined
+
+Expression: "filamentSchema({ livewireId: 'IGj3BQPAkO5rOnrDGkhE' })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.title',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2158ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.description',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: textareaFormComponent is not defined
+
+Expression: "textareaFormComponent({
+                            initialHeight: 3.75,
+                            shouldAutosize: false,
+                            state: $wire.$entangle('data.description'),
+                        })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: state is not defined
+
+Expression: "state"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.client_id',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: selectFormComponent is not defined
+
+Expression: "selectFormComponent({
+                            canOptionLabelsWrap: true,
+                            canSelectPlaceholder: true,
+                            getOptionLabelUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionLabel'],
+                                    { async: true },
+                                )
+                            },
+                            getOptionLabelsUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionLabelsForJs'],
+                                    { async: true },
+                                )
+                            },
+                            getOptionsUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionsForJs'],
+                                    { async: true },
+                                )
+                            },
+                            getSearchResultsUsing: async (search) => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getSearchResultsForJs', { search }],
+                                    { async: true },
+                                )
+                            },
+                            hasDynamicOptions: true,
+                            hasDynamicSearchResults: true,
+                            hasInitialNoOptionsMessage: true,
+                            initialOptionLabel: 'Sarah Chen',
+                            initialOptionLabels: [],
+                            initialState: 1,
+                            isAutofocused: false,
+                            isDisabled: false,
+                            isHtmlAllowed: false,
+                            isMultiple: false,
+                            isReorderable: false,
+                            isSearchable: true,
+                            livewireId: 'IGj3BQPAkO5rOnrDGkhE',
+                            loadingMessage: 'Loading...',
+                            maxItems: null,
+                            maxItemsMessage: 'Only  can be selected.',
+                            noOptionsMessage: 'No options available.',
+                            noSearchResultsMessage: 'No options match your search.',
+                            options: JSON.parse('[{\u0022label\u0022:\u0022Amara Obi\u0022,\u0022value\u0022:\u00223\u0022,\u0022isDisabled\u0022:false},{\u0022label\u0022:\u0022Marcus Johnson\u0022,\u0022value\u0022:\u00222\u0022,\u0022isDisabled\u0022:false},{\u0022label\u0022:\u0022Sarah Chen\u0022,\u0022value\u0022:\u00221\u0022,\u0022isDisabled\u0022:false}]'),
+                            optionsLimit: 50,
+                            placeholder: 'Select an option',
+                            position: null,
+                            searchDebounce: 1000,
+                            searchingMessage: 'Searching...',
+                            searchPrompt: 'Start typing to search...',
+                            searchableOptionFields: JSON.parse('[\u0022label\u0022]'),
+                            state: $wire.$entangle('data.client_id', false),
+                            statePath: 'data.client_id',
+                        })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.user_id',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.status',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.project_type',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2159ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.currency',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.start_date',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.end_date',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: 'data.budget',
+                    containerPath: 'data',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: filamentFormButton is not defined
+
+Expression: "filamentFormButton"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: isProcessing is not defined
+
+Expression: "{ 'fi-processing': isProcessing }"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: isProcessing is not defined
+
+Expression: "isProcessing"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2160ms] [WARNING] Alpine Expression Error: isProcessing is not defined
+
+Expression: "isProcessing"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2161ms] [WARNING] Alpine Expression Error: isProcessing is not defined
+
+Expression: "! isProcessing"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2161ms] [WARNING] Alpine Expression Error: isProcessing is not defined
+
+Expression: "isProcessing"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2161ms] [WARNING] Alpine Expression Error: processingMessage is not defined
+
+Expression: "processingMessage"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2161ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2161ms] [WARNING] Alpine Expression Error: filamentSchemaComponent is not defined
+
+Expression: "filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                })"
+
+ JSHandle@node @ http://localhost:8001/admin/projects/1/edit:2380
+[    2200ms] ReferenceError: filamentSchema is not defined
+    at [Alpine] filamentSchema({ livewireId: 'IGj3BQPAkO5rOnrDGkhE' }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2200ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2201ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2201ms] ReferenceError: filamentSchema is not defined
+    at [Alpine] filamentSchema({ livewireId: 'IGj3BQPAkO5rOnrDGkhE' }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2202ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.title',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2202ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.description',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2203ms] ReferenceError: textareaFormComponent is not defined
+    at [Alpine] textareaFormComponent({
+                            initialHeight: 3.75,
+                            shouldAutosize: false,
+                            state: $wire.$entangle('data.description'),
+                        }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2204ms] ReferenceError: state is not defined
+    at [Alpine] state (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at c (http://localhost:8001/admin/projects/1/edit:2385:30508)
+    at http://localhost:8001/admin/projects/1/edit:2385:31481
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:31468)
+[    2204ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.client_id',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2205ms] ReferenceError: selectFormComponent is not defined
+    at [Alpine] selectFormComponent({
+                            canOptionLabelsWrap: true,
+                            canSelectPlaceholder: true,
+                            getOptionLabelUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionLabel'],
+                                    { async: true },
+                                )
+                            },
+                            getOptionLabelsUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionLabelsForJs'],
+                                    { async: true },
+                                )
+                            },
+                            getOptionsUsing: async () => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getOptionsForJs'],
+                                    { async: true },
+                                )
+                            },
+                            getSearchResultsUsing: async (search) => {
+                                return await Livewire.fireAction(
+                                    $wire.__instance,
+                                    'callSchemaComponentMethod',
+                                    ['form.client_id', 'getSearchResultsForJs', { search }],
+                                    { async: true },
+                                )
+                            },
+                            hasDynamicOptions: true,
+                            hasDynamicSearchResults: true,
+                            hasInitialNoOptionsMessage: true,
+                            initialOptionLabel: 'Sarah Chen',
+                            initialOptionLabels: [],
+                            initialState: 1,
+                            isAutofocused: false,
+                            isDisabled: false,
+                            isHtmlAllowed: false,
+                            isMultiple: false,
+                            isReorderable: false,
+                            isSearchable: true,
+                            livewireId: 'IGj3BQPAkO5rOnrDGkhE',
+                            loadingMessage: 'Loading...',
+                            maxItems: null,
+                            maxItemsMessage: 'Only  can be selected.',
+                            noOptionsMessage: 'No options available.',
+                            noSearchResultsMessage: 'No options match your search.',
+                            options: JSON.parse('[{\u0022label\u0022:\u0022Amara Obi\u0022,\u0022value\u0022:\u00223\u0022,\u0022isDisabled\u0022:false},{\u0022label\u0022:\u0022Marcus Johnson\u0022,\u0022value\u0022:\u00222\u0022,\u0022isDisabled\u0022:false},{\u0022label\u0022:\u0022Sarah Chen\u0022,\u0022value\u0022:\u00221\u0022,\u0022isDisabled\u0022:false}]'),
+                            optionsLimit: 50,
+                            placeholder: 'Select an option',
+                            position: null,
+                            searchDebounce: 1000,
+                            searchingMessage: 'Searching...',
+                            searchPrompt: 'Start typing to search...',
+                            searchableOptionFields: JSON.parse('[\u0022label\u0022]'),
+                            state: $wire.$entangle('data.client_id', false),
+                            statePath: 'data.client_id',
+                        }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2206ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.user_id',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2209ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.status',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2210ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.project_type',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2210ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.currency',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2211ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.start_date',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2212ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.end_date',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2214ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: 'data.budget',
+                    containerPath: 'data',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2214ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2214ms] ReferenceError: filamentFormButton is not defined
+    at [Alpine] filamentFormButton (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2215ms] ReferenceError: isProcessing is not defined
+    at [Alpine] { 'fi-processing': isProcessing } (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:51)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:33483
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at mc (http://localhost:8001/admin/projects/1/edit:2385:33477)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2215ms] ReferenceError: isProcessing is not defined
+    at [Alpine] isProcessing (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:33483
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at mc (http://localhost:8001/admin/projects/1/edit:2385:33477)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2216ms] ReferenceError: isProcessing is not defined
+    at [Alpine] isProcessing (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:34925
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34919)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2216ms] ReferenceError: isProcessing is not defined
+    at [Alpine] ! isProcessing (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:34)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:34925
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34919)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2216ms] ReferenceError: isProcessing is not defined
+    at [Alpine] isProcessing (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:34925
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34919)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2217ms] ReferenceError: processingMessage is not defined
+    at [Alpine] processingMessage (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:32)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at http://localhost:8001/admin/projects/1/edit:2385:32983
+    at n (http://localhost:8001/admin/projects/1/edit:2385:18185)
+    at Object.dp [as effect] (http://localhost:8001/admin/projects/1/edit:2385:17970)
+    at gt (http://localhost:8001/admin/projects/1/edit:2381:418)
+    at http://localhost:8001/admin/projects/1/edit:2381:532
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:32976)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+[    2217ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593
+[    2218ms] ReferenceError: filamentSchemaComponent is not defined
+    at [Alpine] filamentSchemaComponent({
+                    path: '',
+                    containerPath: '',
+                    $wire,
+                }) (eval at <anonymous> (http://localhost:8001/admin/projects/1/edit:5:670), <anonymous>:3:16)
+    at http://localhost:8001/admin/projects/1/edit:2385:1074
+    at uu (http://localhost:8001/admin/projects/1/edit:2381:4993)
+    at ct (http://localhost:8001/admin/projects/1/edit:2385:145)
+    at Function.<anonymous> (http://localhost:8001/admin/projects/1/edit:2385:34010)
+    at n (http://localhost:8001/admin/projects/1/edit:2385:2335)
+    at a (http://localhost:8001/admin/projects/1/edit:2385:2365)
+    at bu (http://localhost:8001/admin/projects/1/edit:2385:2375)
+    at Pe (http://localhost:8001/admin/projects/1/edit:2385:5172)
+    at http://localhost:8001/admin/projects/1/edit:2385:4593

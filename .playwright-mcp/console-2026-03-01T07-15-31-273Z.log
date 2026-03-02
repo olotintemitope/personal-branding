@@ -1,0 +1,4 @@
+[   34203ms] SyntaxError: Failed to execute 'querySelector' on 'Document': '#' is not a valid selector.
+    at HTMLAnchorElement.<anonymous> (http://localhost:8001/:2546:41)
+[  350306ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8001/blog:0
+[  549129ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8001/blog:0

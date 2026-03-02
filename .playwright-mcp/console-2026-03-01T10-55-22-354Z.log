@@ -1,0 +1,196 @@
+[  934832ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  938581ms] Object
+[  942502ms] Object
+[  943254ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  947837ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  947862ms] Object
+[  948578ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  950705ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  950721ms] Object
+[  953127ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  956239ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  956310ms] Object
+[  957944ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  959787ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  959790ms] Object
+[  962924ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  964355ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  964356ms] Object
+[  967865ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  969548ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  969559ms] Object
+[  972981ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  975451ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  975472ms] Object
+[  978247ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  980287ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  980301ms] Object
+[  982929ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  984812ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  984822ms] Object
+[  988206ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  990705ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  990708ms] Object
+[  993617ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[  996094ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[  996122ms] Object
+[  998199ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1000700ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1000705ms] Object
+[ 1003393ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1006950ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1006953ms] Object
+[ 1008381ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1012676ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1012708ms] Object
+[ 1013943ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1016764ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1016798ms] Object
+[ 1018332ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1019655ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1019660ms] Object
+[ 1023677ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1026281ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1026286ms] Object
+[ 1027972ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1029286ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1029300ms] Object
+[ 1033802ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1036524ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1036525ms] Object
+[ 1040956ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1046945ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1046956ms] Object
+[ 1047487ms] Object
+[ 1048421ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1051216ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1051247ms] Object
+[ 1053302ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1056003ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1056016ms] Object
+[ 1058453ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1060781ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1060895ms] Object
+[ 1064484ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1067266ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1067297ms] Object
+[ 1068057ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1069425ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1069428ms] Object
+[ 1072807ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1074397ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1074400ms] Object
+[ 1077763ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1078619ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1078674ms] Object
+[ 1082736ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1083541ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1083544ms] Object
+[ 1087907ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1088949ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1088969ms] Object
+[ 1093019ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1094092ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1094098ms] Object
+[ 1097859ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1098870ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1098921ms] Object
+[ 1102778ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8001/livewire-94eff34a/update:0
+[ 1103575ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://127.0.0.1:8001/livewire-94eff34a/livewire.js?id=8f29b734:5541:16)
+[ 1103576ms] Object

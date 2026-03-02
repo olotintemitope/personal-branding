@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'bedrock' => [
+        'key' => env('AWS_ACCESS_KEY_ID'),
+        'secret' => env('AWS_SECRET_ACCESS_KEY'),
+        'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+        'model' => env('AWS_MODEL_BUILDER', 'anthropic.claude-3-sonnet-20240229-v1:0'),
+        'embed_model' => env('RAG_BEDROCK_EMBED_MODEL', 'amazon.titan-embed-text-v2:0'),
+    ],
+
 ];

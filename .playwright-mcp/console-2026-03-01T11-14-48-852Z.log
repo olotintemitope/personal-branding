@@ -1,0 +1,13 @@
+[ 1901514ms] [ERROR] Access to fetch at 'http://localhost:8001/storage/1/blog-featured-1.jpg' from origin 'http://127.0.0.1:8001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:8001/admin/posts/1/edit:0
+[ 1901514ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8001/storage/1/blog-featured-1.jpg:0
+[ 1901606ms] TypeError: Failed to fetch
+    at load (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:40:138215)
+    at l (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:579)
+    at Object.n [as load] (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:458)
+    at Object.u [as load] (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:10228)
+    at Object.ADD_ITEM (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:19574)
+    at p (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:1:592)
+    at http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:14240
+    at Array.forEach (<anonymous>)
+    at Object.DID_SET_FILES (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:2:14173)
+    at p (http://127.0.0.1:8001/js/filament/forms/components/file-upload.js?v=5.2.4.0:1:592)

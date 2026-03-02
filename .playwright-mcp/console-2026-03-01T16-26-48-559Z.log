@@ -1,0 +1,14 @@
+[  778251ms] [ERROR] SyntaxError: Unexpected token '<', "<br />
+<b>"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at sendRequest (http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5555:27) @ http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5556
+[  778411ms] Object
+[  783252ms] [ERROR] SyntaxError: Unexpected token '<', "<br />
+<b>"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at sendRequest (http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5555:27) @ http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5556
+[  783573ms] InvalidStateError: Failed to execute 'showModal' on 'HTMLDialogElement': The dialog is already open as a non-modal dialog, and therefore cannot be opened as a modal dialog.
+    at showHtmlModal (http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:4644:11)
+    at Object.error (http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5451:11)
+    at sendRequest (http://localhost:8001/livewire-94eff34a/livewire.js?id=8f29b734:5558:16)
+[  783573ms] Object
