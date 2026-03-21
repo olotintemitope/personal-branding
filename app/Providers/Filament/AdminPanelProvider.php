@@ -30,7 +30,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandName('Temitope.')
             ->brandLogo(fn () => view('filament.admin-logo'))
             ->brandLogoHeight('2rem')
-            ->favicon(asset('favicon.svg'))
+            ->favicon(asset('favicon.png'))
             ->colors([
                 'primary' => Color::Indigo,
                 'danger' => Color::Rose,
