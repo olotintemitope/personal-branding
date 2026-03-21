@@ -21,8 +21,8 @@
     <meta property="og:image:height" content="1024">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@@laztopaz_">
-    <meta name="twitter:creator" content="@@laztopaz_">
+    <meta name="twitter:site" content="{{ '@laztopaz_' }}">
+    <meta name="twitter:creator" content="{{ '@laztopaz_' }}">
     <meta name="twitter:title" content="Temitope Olotin — Senior Software Engineer & AI Consultant">
     <meta name="twitter:description" content="Ship your AI-powered product faster. 10+ years of battle-tested engineering for startups and enterprises.">
     <meta name="twitter:image" content="{{ url('/images/my-logo.png') }}">
@@ -37,40 +37,41 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@@type": "Person",
-        "name": "Temitope Olotin",
-        "jobTitle": "Senior Software Engineer & AI Consultant",
-        "url": "{{ url('/') }}",
-        "sameAs": [
-            "https://www.linkedin.com/in/olotin-temitope-53b43272/",
-            "https://github.com/olotintemitope",
-            "https://x.com/laztopaz_"
-        ],
-        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Laravel", "PHP", "Web Development", "API Architecture", "Data Analytics"],
-        "alumniOf": [
-            { "@@type": "EducationalOrganization", "name": "Ambrose Alli University, Ekpoma" },
-            { "@@type": "EducationalOrganization", "name": "The Federal Polytechnic, Ado-Ekiti" }
-        ],
-        "address": { "@@type": "PostalAddress", "addressCountry": "NG", "addressRegion": "Lagos" }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@@type": "FAQPage",
-        "mainEntity": [
-            { "@@type": "Question", "name": "How quickly can you start on my project?", "acceptedAnswer": { "@@type": "Answer", "text": "Most projects kick off within 1-2 weeks of the discovery call. For urgent needs, work can start within 48 hours depending on current availability." } },
-            { "@@type": "Question", "name": "Do you work with startups or just enterprises?", "acceptedAnswer": { "@@type": "Answer", "text": "Both. The sweet spot is founders who need their MVP shipped fast and enterprises scaling existing products. The approach adapts, but the engineering standards don't." } },
-            { "@@type": "Question", "name": "Do you take equity instead of payment?", "acceptedAnswer": { "@@type": "Answer", "text": "No. Fair, transparent rates are charged for production-grade work. Pricing is startup-friendly — senior-level engineering without the Silicon Valley price tag." } },
-            { "@@type": "Question", "name": "Can you integrate AI into my existing application?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Specializing in retrofitting AI into existing systems — intelligent automation with n8n and Zapier, custom AI agents with LangChain, or LLM integration for document processing." } },
-            { "@@type": "Question", "name": "What happens after the project is delivered?", "acceptedAnswer": { "@@type": "Answer", "text": "Every Full Build includes 30 days of post-launch support. After that, many clients move to a monthly retainer. You own 100% of the source code and documentation either way." } },
-            { "@@type": "Question", "name": "What timezone do you work in?", "acceptedAnswer": { "@@type": "Answer", "text": "Based in Lagos, Nigeria (WAT / GMT+1), with over a decade of experience working with teams across Canada, New York, London, and Belgium. Flexible scheduling overlaps with North American and European business hours." } }
-        ]
-    }
-    </script>
+    @php
+        $personSchema = json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'Person',
+            'name' => 'Temitope Olotin',
+            'jobTitle' => 'Senior Software Engineer & AI Consultant',
+            'url' => url('/'),
+            'sameAs' => [
+                'https://www.linkedin.com/in/olotin-temitope-53b43272/',
+                'https://github.com/olotintemitope',
+                'https://x.com/laztopaz_',
+            ],
+            'knowsAbout' => ['Artificial Intelligence', 'Machine Learning', 'Laravel', 'PHP', 'Web Development', 'API Architecture', 'Data Analytics'],
+            'alumniOf' => [
+                ['@type' => 'EducationalOrganization', 'name' => 'Ambrose Alli University, Ekpoma'],
+                ['@type' => 'EducationalOrganization', 'name' => 'The Federal Polytechnic, Ado-Ekiti'],
+            ],
+            'address' => ['@type' => 'PostalAddress', 'addressCountry' => 'NG', 'addressRegion' => 'Lagos'],
+        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+
+        $faqSchema = json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => [
+                ['@type' => 'Question', 'name' => 'How quickly can you start on my project?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Most projects kick off within 1-2 weeks of the discovery call. For urgent needs, work can start within 48 hours depending on current availability.']],
+                ['@type' => 'Question', 'name' => 'Do you work with startups or just enterprises?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Both. The sweet spot is founders who need their MVP shipped fast and enterprises scaling existing products. The approach adapts, but the engineering standards don\'t.']],
+                ['@type' => 'Question', 'name' => 'Do you take equity instead of payment?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'No. Fair, transparent rates are charged for production-grade work. Pricing is startup-friendly — senior-level engineering without the Silicon Valley price tag.']],
+                ['@type' => 'Question', 'name' => 'Can you integrate AI into my existing application?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Specializing in retrofitting AI into existing systems — intelligent automation with n8n and Zapier, custom AI agents with LangChain, or LLM integration for document processing.']],
+                ['@type' => 'Question', 'name' => 'What happens after the project is delivered?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Every Full Build includes 30 days of post-launch support. After that, many clients move to a monthly retainer. You own 100% of the source code and documentation either way.']],
+                ['@type' => 'Question', 'name' => 'What timezone do you work in?', 'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Based in Lagos, Nigeria (WAT / GMT+1), with over a decade of experience working with teams across Canada, New York, London, and Belgium. Flexible scheduling overlaps with North American and European business hours.']],
+            ],
+        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    @endphp
+    <script type="application/ld+json">{!! $personSchema !!}</script>
+    <script type="application/ld+json">{!! $faqSchema !!}</script>
 </head>
 <body class="font-body bg-brand text-cream antialiased overflow-x-hidden leading-relaxed">
 
@@ -418,7 +419,7 @@
                         <h3 class="rv font-display text-lg font-semibold text-cream mb-2">
                             Published on
                             <a href="https://olotintemitope.medium.com" target="_blank" rel="noopener" class="text-amber-brand underline underline-offset-4">Medium</a> &amp;
-                            <a href="https://www.codementor.io/@@olotintemitope" target="_blank" rel="noopener" class="text-amber-brand underline underline-offset-4">Codementor</a>
+                            <a href="https://www.codementor.io/{{ '@olotintemitope' }}" target="_blank" rel="noopener" class="text-amber-brand underline underline-offset-4">Codementor</a>
                         </h3>
 
                         @php
@@ -654,7 +655,7 @@
                     </a>
                     <a href="https://x.com/laztopaz_" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-white/[0.06] rounded-sm font-mono text-[0.6875rem] font-medium text-cream-dim hover:border-amber-brand/25 hover:text-amber-brand hover:-translate-y-0.5 transition-all">
                         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        @@laztopaz_
+                        {{ '@laztopaz_' }}
                     </a>
                 </div>
             </div>
