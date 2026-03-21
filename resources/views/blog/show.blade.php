@@ -21,8 +21,8 @@
     @endif
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@laztopaz_">
-    <meta name="twitter:creator" content="@laztopaz_">
+    <meta name="twitter:site" content="{{ '@laztopaz_' }}">
+    <meta name="twitter:creator" content="{{ '@laztopaz_' }}">
     <meta name="twitter:title" content="{{ $post->title }}">
     <meta name="twitter:description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
     <meta name="twitter:image" content="{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}">
@@ -34,49 +34,41 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @php $readingTime = max(1, ceil(str_word_count(strip_tags($post->content)) / 200)); @endphp
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": @json($post->title),
-        "description": @json($post->excerpt ?: Str::limit(strip_tags($post->content), 160)),
-        "url": "{{ route('blog.show', $post->slug) }}",
-        "datePublished": "{{ $post->published_at?->toIso8601String() }}",
-        "dateModified": "{{ $post->updated_at->toIso8601String() }}",
-        "author": {
-            "@type": "Person",
-            "name": "{{ $post->user->name ?? 'Temitope Olotin' }}",
-            "url": "{{ url('/') }}"
-        },
-        "publisher": {
-            "@type": "Person",
-            "name": "Temitope Olotin",
-            "url": "{{ url('/') }}"
-        },
-        "image": "{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}",
-        "wordCount": {{ str_word_count(strip_tags($post->content)) }},
-        "timeRequired": "PT{{ $readingTime }}M"
-        @if($post->category)
-        ,"articleSection": @json($post->category->name)
-        @endif
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ route('blog.index') }}" }
-            @if($post->category)
-            ,{ "@type": "ListItem", "position": 3, "name": @json($post->category->name), "item": "{{ route('blog.index', ['category' => $post->category->slug]) }}" }
-            ,{ "@type": "ListItem", "position": 4, "name": @json($post->title) }
-            @else
-            ,{ "@type": "ListItem", "position": 3, "name": @json($post->title) }
-            @endif
-        ]
-    }
-    </script>
+    @php
+        $articleSchema = json_encode(array_filter([
+            '@context' => 'https://schema.org',
+            '@type' => 'BlogPosting',
+            'headline' => $post->title,
+            'description' => $post->excerpt ?: Str::limit(strip_tags($post->content), 160),
+            'url' => route('blog.show', $post->slug),
+            'datePublished' => $post->published_at?->toIso8601String(),
+            'dateModified' => $post->updated_at->toIso8601String(),
+            'author' => ['@type' => 'Person', 'name' => $post->user->name ?? 'Temitope Olotin', 'url' => url('/')],
+            'publisher' => ['@type' => 'Person', 'name' => 'Temitope Olotin', 'url' => url('/')],
+            'image' => $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png'),
+            'wordCount' => str_word_count(strip_tags($post->content)),
+            'timeRequired' => 'PT' . $readingTime . 'M',
+            'articleSection' => $post->category?->name,
+        ]), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+
+        $breadcrumbs = [
+            ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => url('/')],
+            ['@type' => 'ListItem', 'position' => 2, 'name' => 'Blog', 'item' => route('blog.index')],
+        ];
+        if ($post->category) {
+            $breadcrumbs[] = ['@type' => 'ListItem', 'position' => 3, 'name' => $post->category->name, 'item' => route('blog.index', ['category' => $post->category->slug])];
+            $breadcrumbs[] = ['@type' => 'ListItem', 'position' => 4, 'name' => $post->title];
+        } else {
+            $breadcrumbs[] = ['@type' => 'ListItem', 'position' => 3, 'name' => $post->title];
+        }
+        $breadcrumbSchema = json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => $breadcrumbs,
+        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    @endphp
+    <script type="application/ld+json">{!! $articleSchema !!}</script>
+    <script type="application/ld+json">{!! $breadcrumbSchema !!}</script>
     <style>
         /* Article prose — editorial quality */
         .article-body { font-family: 'Newsreader', 'Cormorant Garamond', Georgia, serif; }

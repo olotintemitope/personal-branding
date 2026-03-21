@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="Temitope Olotin">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@laztopaz_">
+    <meta name="twitter:site" content="{{ '@laztopaz_' }}">
     <meta name="twitter:title" content="Blog — Temitope Olotin">
     <meta name="twitter:description" content="Insights on software engineering, AI, Laravel, and building products.">
     <meta name="twitter:image" content="{{ url('/images/my-logo.png') }}">
@@ -34,20 +34,21 @@
     <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600,700|outfit:300,400,500,600,700|jetbrains-mono:400,500" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Blog — Temitope Olotin",
-        "description": "Insights on software engineering, AI, Laravel, and building products.",
-        "url": "{{ url()->current() }}",
-        "author": {
-            "@type": "Person",
-            "name": "Temitope Olotin",
-            "url": "{{ url('/') }}"
-        }
-    }
-    </script>
+    @php
+        $blogSchema = json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'CollectionPage',
+            'name' => 'Blog — Temitope Olotin',
+            'description' => 'Insights on software engineering, AI, Laravel, and building products.',
+            'url' => url()->current(),
+            'author' => [
+                '@type' => 'Person',
+                'name' => 'Temitope Olotin',
+                'url' => url('/'),
+            ],
+        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    @endphp
+    <script type="application/ld+json">{!! $blogSchema !!}</script>
 </head>
 <body class="min-h-screen bg-brand text-cream font-body antialiased">
 
