@@ -210,9 +210,9 @@
                 {{-- Featured Image --}}
                 <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-0 mt-10">
                     <div class="relative aspect-[2/1] overflow-hidden rounded bg-brand-elevated">
-                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop&q=80' }}"
                              alt="{{ $post->title }}"
-                             class="w-full h-full {{ $post->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-20 invert opacity-10' }}">
+                             class="w-full h-full object-cover">
                     </div>
                 </div>
             </header>
@@ -292,9 +292,9 @@
                             @foreach($relatedPosts as $related)
                                 <a href="{{ route('blog.show', $related->slug) }}" class="group flex flex-col bg-brand hover:bg-brand-elevated transition-all">
                                     <div class="relative aspect-[16/10] overflow-hidden bg-brand-elevated">
-                                        <img src="{{ $related->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                                        <img src="{{ $related->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop&q=80' }}"
                                              alt="{{ $related->title }}"
-                                             class="w-full h-full {{ $related->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-10 invert opacity-10' }} transition-transform duration-700 group-hover:scale-105">
+                                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                                     </div>
                                     <div class="flex flex-col flex-1 p-6">
                                         @if($related->category)
