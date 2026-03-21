@@ -3,21 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <title>{{ $post->title }} — Temitope Olotin</title>
     <meta name="description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
+    <link rel="canonical" href="{{ route('blog.show', $post->slug) }}">
+
+    <meta property="og:type" content="article">
     <meta property="og:title" content="{{ $post->title }}">
     <meta property="og:description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
-    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ route('blog.show', $post->slug) }}">
     <meta property="og:image" content="{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}">
+    <meta property="og:site_name" content="Temitope Olotin">
     <meta property="article:published_time" content="{{ $post->published_at?->toIso8601String() }}">
+    <meta property="article:author" content="Temitope Olotin">
+    @if($post->category)
+    <meta property="article:section" content="{{ $post->category->name }}">
+    @endif
+
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@laztopaz_">
     <meta name="twitter:creator" content="@laztopaz_">
+    <meta name="twitter:title" content="{{ $post->title }}">
+    <meta name="twitter:description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
+    <meta name="twitter:image" content="{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}">
+
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,400i,500,600,700|outfit:300,400,500,600,700|jetbrains-mono:400,500|newsreader:400,400i,500,600,700" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @php $readingTime = max(1, ceil(str_word_count(strip_tags($post->content)) / 200)); @endphp
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": @json($post->title),
+        "description": @json($post->excerpt ?: Str::limit(strip_tags($post->content), 160)),
+        "url": "{{ route('blog.show', $post->slug) }}",
+        "datePublished": "{{ $post->published_at?->toIso8601String() }}",
+        "dateModified": "{{ $post->updated_at->toIso8601String() }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ $post->user->name ?? 'Temitope Olotin' }}",
+            "url": "{{ url('/') }}"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Temitope Olotin",
+            "url": "{{ url('/') }}"
+        },
+        "image": "{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}",
+        "wordCount": {{ str_word_count(strip_tags($post->content)) }},
+        "timeRequired": "PT{{ $readingTime }}M"
+        @if($post->category)
+        ,"articleSection": @json($post->category->name)
+        @endif
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ route('blog.index') }}" }
+            @if($post->category)
+            ,{ "@type": "ListItem", "position": 3, "name": @json($post->category->name), "item": "{{ route('blog.index', ['category' => $post->category->slug]) }}" }
+            ,{ "@type": "ListItem", "position": 4, "name": @json($post->title) }
+            @else
+            ,{ "@type": "ListItem", "position": 3, "name": @json($post->title) }
+            @endif
+        ]
+    }
+    </script>
     <style>
         /* Article prose — editorial quality */
         .article-body { font-family: 'Newsreader', 'Cormorant Garamond', Georgia, serif; }
@@ -92,7 +151,7 @@
         </div>
     </nav>
 
-    <div class="relative z-10">
+    <main class="relative z-10">
         <article>
             {{-- Header --}}
             <header class="pt-12 sm:pt-16 pb-10">
@@ -269,7 +328,7 @@
                 </div>
             @endif
         </article>
-    </div>
+    </main>
 
     {{-- Footer --}}
     <footer class="relative z-10 border-t border-white/[0.06] py-8">

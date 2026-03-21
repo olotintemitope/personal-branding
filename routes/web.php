@@ -80,6 +80,17 @@ Route::get('/blog/{post:slug}', function (Post $post) {
     return view('blog.show', compact('post', 'relatedPosts'));
 })->name('blog.show');
 
+Route::get('/sitemap.xml', function () {
+    $posts = Post::where('status', PostStatus::Published)
+        ->whereNotNull('published_at')
+        ->where('published_at', '<=', now())
+        ->latest('published_at')
+        ->get();
+
+    return response()->view('sitemap', compact('posts'))
+        ->header('Content-Type', 'application/xml');
+})->name('sitemap');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });

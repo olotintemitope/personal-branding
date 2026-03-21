@@ -3,13 +3,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog — Temitope Olotin</title>
+    <meta name="robots" content="index, follow">
+    <title>Blog — Temitope Olotin | Software Engineering, AI & Laravel</title>
     <meta name="description" content="Insights on software engineering, AI, Laravel, and building products — by Temitope Olotin.">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog — Temitope Olotin">
+    <meta property="og:description" content="Insights on software engineering, AI, Laravel, and building products — by Temitope Olotin.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ url('/images/my-logo.png') }}">
+    <meta property="og:site_name" content="Temitope Olotin">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@laztopaz_">
+    <meta name="twitter:title" content="Blog — Temitope Olotin">
+    <meta name="twitter:description" content="Insights on software engineering, AI, Laravel, and building products.">
+    <meta name="twitter:image" content="{{ url('/images/my-logo.png') }}">
+
+    @if($posts->currentPage() > 1)
+        <link rel="prev" href="{{ $posts->previousPageUrl() }}">
+    @endif
+    @if($posts->hasMorePages())
+        <link rel="next" href="{{ $posts->nextPageUrl() }}">
+    @endif
+
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600,700|outfit:300,400,500,600,700|jetbrains-mono:400,500" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Blog — Temitope Olotin",
+        "description": "Insights on software engineering, AI, Laravel, and building products.",
+        "url": "{{ url()->current() }}",
+        "author": {
+            "@type": "Person",
+            "name": "Temitope Olotin",
+            "url": "{{ url('/') }}"
+        }
+    }
+    </script>
 </head>
 <body class="min-h-screen bg-brand text-cream font-body antialiased">
 
@@ -32,7 +70,7 @@
         </div>
     </nav>
 
-    <div class="relative z-10">
+    <main class="relative z-10">
 
         @if($posts->count())
             @php
@@ -251,7 +289,7 @@
             </section>
         @endif
 
-    </div>
+    </main>
 
     {{-- Footer --}}
     <footer class="relative z-10 border-t border-white/[0.06] py-8">
