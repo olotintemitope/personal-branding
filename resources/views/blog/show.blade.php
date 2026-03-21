@@ -157,11 +157,13 @@
                 </div>
 
                 {{-- Featured Image --}}
-                @if($post->getFirstMediaUrl('featured_image'))
-                    <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-0 mt-10">
-                        <img src="{{ $post->getFirstMediaUrl('featured_image') }}" alt="{{ $post->title }}" class="w-full rounded object-cover max-h-[500px]">
+                <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-0 mt-10">
+                    <div class="relative aspect-[2/1] overflow-hidden rounded bg-brand-elevated">
+                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                             alt="{{ $post->title }}"
+                             class="w-full h-full {{ $post->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-20 invert opacity-10' }}">
                     </div>
-                @endif
+                </div>
             </header>
 
             {{-- Article Body + Sidebar --}}
@@ -239,13 +241,9 @@
                             @foreach($relatedPosts as $related)
                                 <a href="{{ route('blog.show', $related->slug) }}" class="group flex flex-col bg-brand hover:bg-brand-elevated transition-all">
                                     <div class="relative aspect-[16/10] overflow-hidden bg-brand-elevated">
-                                        @if($related->getFirstMediaUrl('featured_image'))
-                                            <img src="{{ $related->getFirstMediaUrl('featured_image') }}" alt="{{ $related->title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                                        @else
-                                            <div class="absolute inset-0 bg-gradient-to-br from-amber-brand/8 to-transparent flex items-center justify-center">
-                                                <svg class="w-8 h-8 text-amber-brand/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
-                                            </div>
-                                        @endif
+                                        <img src="{{ $related->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                                             alt="{{ $related->title }}"
+                                             class="w-full h-full {{ $related->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-10 invert opacity-10' }} transition-transform duration-700 group-hover:scale-105">
                                     </div>
                                     <div class="flex flex-col flex-1 p-6">
                                         @if($related->category)

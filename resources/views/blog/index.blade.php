@@ -91,19 +91,9 @@
                         <div class="grid md:grid-cols-2 min-h-[380px]">
                             {{-- Image --}}
                             <div class="relative overflow-hidden bg-brand-elevated">
-                                @if($featured->getFirstMediaUrl('featured_image'))
-                                    <img src="{{ $featured->getFirstMediaUrl('featured_image') }}"
-                                         alt="{{ $featured->title }}"
-                                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                                @else
-                                    <div class="absolute inset-0 bg-gradient-to-br from-amber-brand/10 via-amber-brand/5 to-transparent flex items-center justify-center">
-                                        <div class="w-20 h-20 border border-white/[0.06] rounded flex items-center justify-center">
-                                            <svg class="w-8 h-8 text-amber-brand/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                @endif
+                                <img src="{{ $featured->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                                     alt="{{ $featured->title }}"
+                                     class="absolute inset-0 w-full h-full {{ $featured->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-16 invert opacity-10' }} transition-transform duration-700 group-hover:scale-105">
                                 <div class="absolute top-5 left-5 z-10">
                                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-sm bg-amber-brand text-brand font-mono text-[0.5625rem] font-semibold tracking-[0.1em] uppercase">
                                         <span class="w-1.5 h-1.5 rounded-full bg-brand/40 animate-pulse-dot"></span>
@@ -170,19 +160,9 @@
 
                                     {{-- Image --}}
                                     <div class="relative aspect-[16/10] overflow-hidden bg-brand-elevated">
-                                        @if($post->getFirstMediaUrl('featured_image'))
-                                            <img src="{{ $post->getFirstMediaUrl('featured_image') }}"
-                                                 alt="{{ $post->title }}"
-                                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                                        @else
-                                            <div class="absolute inset-0 bg-gradient-to-br from-amber-brand/8 to-transparent flex items-center justify-center">
-                                                <div class="w-14 h-14 border border-white/[0.06] rounded flex items-center justify-center">
-                                                    <svg class="w-6 h-6 text-amber-brand/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        @endif
+                                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: '/images/my-logo.png' }}"
+                                             alt="{{ $post->title }}"
+                                             class="w-full h-full {{ $post->getFirstMediaUrl('featured_image') ? 'object-cover' : 'object-contain p-10 invert opacity-10' }} transition-transform duration-700 group-hover:scale-105">
                                     </div>
 
                                     {{-- Content --}}
