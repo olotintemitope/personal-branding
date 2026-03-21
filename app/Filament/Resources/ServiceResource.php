@@ -11,6 +11,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -29,7 +30,7 @@ class ServiceResource extends Resource
     public static function form(Schema $schema): Schema
     {
         return $schema->components([
-            Forms\Components\Section::make('Service Details')
+            Section::make('Service Details')
                 ->columns(2)
                 ->schema([
                     Forms\Components\TextInput::make('title')
@@ -67,7 +68,7 @@ class ServiceResource extends Resource
                         ->default(true),
                 ]),
 
-            Forms\Components\Section::make('Pricing (Multi-Currency)')
+            Section::make('Pricing (Multi-Currency)')
                 ->description('Set the price in each currency. Leave blank for currencies you don\'t want to display.')
                 ->columns(3)
                 ->schema(
@@ -79,7 +80,7 @@ class ServiceResource extends Resource
                     )->all()
                 ),
 
-            Forms\Components\Section::make('Features')
+            Section::make('Features')
                 ->description('Bullet points shown on the pricing card')
                 ->schema([
                     Forms\Components\Repeater::make('features')
@@ -107,9 +108,9 @@ class ServiceResource extends Resource
                     ->searchable()
                     ->sortable(),
 
-                Tables\Columns\TextColumn::make('prices')
+                Tables\Columns\TextColumn::make('prices.USD')
                     ->label('Price (USD)')
-                    ->formatStateUsing(fn ($state) => isset($state['USD']) ? '$' . number_format((float) $state['USD']) : '—'),
+                    ->formatStateUsing(fn ($state) => $state ? '$' . number_format((float) $state) : '—'),
 
                 Tables\Columns\TextColumn::make('price_unit')
                     ->label('Unit'),
