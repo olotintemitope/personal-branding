@@ -93,6 +93,7 @@
                     <a href="#projects" class="font-mono text-[0.6875rem] font-medium tracking-wider uppercase text-cream-dim hover:text-amber-brand transition-colors">Projects</a>
                     <a href="#pricing" class="font-mono text-[0.6875rem] font-medium tracking-wider uppercase text-cream-dim hover:text-amber-brand transition-colors">Pricing</a>
                     <a href="#credentials" class="font-mono text-[0.6875rem] font-medium tracking-wider uppercase text-cream-dim hover:text-amber-brand transition-colors">Credentials</a>
+                    <a href="/blog" class="font-mono text-[0.6875rem] font-medium tracking-wider uppercase text-cream-dim hover:text-amber-brand transition-colors">Blog</a>
                     <a href="#contact" class="font-mono text-[0.6875rem] font-medium tracking-wider uppercase text-cream-dim hover:text-amber-brand transition-colors">Contact</a>
                 </div>
 
@@ -115,6 +116,7 @@
         <a href="#projects" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-cream-muted hover:text-amber-brand transition-colors">Projects</a>
         <a href="#pricing" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-cream-muted hover:text-amber-brand transition-colors">Pricing</a>
         <a href="#credentials" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-cream-muted hover:text-amber-brand transition-colors">Credentials</a>
+        <a href="/blog" class="font-display text-3xl font-medium text-cream-muted hover:text-amber-brand transition-colors">Blog</a>
         <a href="#contact" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-cream-muted hover:text-amber-brand transition-colors">Contact</a>
         <a href="#contact" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-amber-brand transition-colors">Book a Call</a>
     </div>
