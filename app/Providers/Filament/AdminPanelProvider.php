@@ -42,6 +42,8 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
             ->navigationGroups([
+                NavigationGroup::make('Website')
+                    ->icon('heroicon-o-globe-alt'),
                 NavigationGroup::make('Blog')
                     ->icon('heroicon-o-pencil-square'),
                 NavigationGroup::make('Team')

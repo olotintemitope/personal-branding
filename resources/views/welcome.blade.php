@@ -503,37 +503,34 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.06] mt-12">
-                @php
-                    $plans = [
-                        ['tier' => 'Consultation', 'name' => 'Strategy Session', 'price' => '$150', 'unit' => 'per hour', 'desc' => 'Unstick a hard problem in 60 minutes. Walk away with a clear architecture plan, AI feasibility verdict, and concrete next steps.', 'features' => ['1-on-1 technical consultation', 'Architecture review & recommendations', 'AI feasibility assessment', 'Written summary & action items'], 'cta' => 'Book a Session', 'featured' => false],
-                        ['tier' => 'Project-Based', 'name' => 'Full Build', 'price' => '$5,000+', 'unit' => 'per project', 'desc' => 'You describe the product. I ship it. Complete end-to-end build — architecture, development, testing, deployment, and 30 days of post-launch support.', 'features' => ['Full project scoping & planning', 'Design, development & testing', 'Deployment & CI/CD setup', '30-day post-launch support', 'Source code & documentation'], 'cta' => 'Start a Project', 'featured' => true],
-                        ['tier' => 'Retainer', 'name' => 'Ongoing Partnership', 'price' => '$3,000', 'unit' => 'per month · 20 hrs', 'desc' => "Like having a senior engineer on your team — without the overhead. Dedicated hours, priority scheduling, and unused hours roll over.", 'features' => ['20 hours of dedicated dev time', 'Priority response & scheduling', 'Weekly progress updates', 'Rollover unused hours'], 'cta' => 'Get Started', 'featured' => false],
-                    ];
-                @endphp
-
-                @foreach($plans as $plan)
-                    <div class="rv rv-d{{ $loop->iteration }} bg-brand flex flex-col relative hover:bg-brand-elevated transition-colors {{ $plan['featured'] ? 'bg-brand-elevated' : '' }} {{ $plan['featured'] ? 'pt-12' : 'p-8 sm:p-10' }} {{ $plan['featured'] ? 'px-8 sm:px-10 pb-8 sm:pb-10' : '' }}">
-                        @if($plan['featured'])
-                            <div class="absolute top-0 inset-x-0 py-1.5 bg-amber-brand text-brand font-mono text-[0.5625rem] font-semibold tracking-[0.15em] uppercase text-center">Most Popular</div>
+            @if($services->count())
+            <div class="grid grid-cols-1 md:grid-cols-{{ min($services->count(), 3) }} gap-px bg-white/[0.06] mt-12">
+                @foreach($services as $service)
+                    <div class="rv rv-d{{ $loop->iteration }} bg-brand flex flex-col relative hover:bg-brand-elevated transition-colors {{ $service->is_featured ? 'bg-brand-elevated pt-12 px-8 sm:px-10 pb-8 sm:pb-10' : 'p-8 sm:p-10' }}">
+                        @if($service->badge)
+                            <div class="absolute top-0 inset-x-0 py-1.5 bg-amber-brand text-brand font-mono text-[0.5625rem] font-semibold tracking-[0.15em] uppercase text-center">{{ $service->badge }}</div>
                         @endif
-                        <span class="font-mono text-[0.625rem] font-medium tracking-[0.15em] uppercase text-amber-brand mb-2">{{ $plan['tier'] }}</span>
-                        <h3 class="font-display text-xl font-semibold text-cream mb-4">{{ $plan['name'] }}</h3>
-                        <div class="font-display text-4xl font-semibold text-cream leading-none mb-1">{{ $plan['price'] }}</div>
-                        <div class="font-mono text-[0.6875rem] text-cream-dim mb-6">{{ $plan['unit'] }}</div>
-                        <p class="text-sm text-cream-muted leading-relaxed font-light mb-6">{{ $plan['desc'] }}</p>
-                        <ul class="flex-1 mb-8 space-y-2">
-                            @foreach($plan['features'] as $feature)
-                                <li class="flex items-start gap-2.5 text-sm text-cream-muted font-light">
-                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 mt-0.5 text-amber-brand"><path d="m3 7 3 3 5-6"/></svg>
-                                    {{ $feature }}
-                                </li>
-                            @endforeach
-                        </ul>
-                        <a href="#contact" class="block w-full text-center py-3.5 font-mono text-[0.6875rem] font-semibold tracking-wider uppercase rounded-sm transition-all {{ $plan['featured'] ? 'bg-amber-brand text-brand border border-amber-brand hover:bg-amber-light hover:shadow-[0_0_24px_rgba(212,160,23,0.15)]' : 'border border-white/10 text-cream-muted hover:border-amber-brand/25 hover:text-amber-brand' }}">{{ $plan['cta'] }}</a>
+                        <h3 class="font-display text-xl font-semibold text-cream mb-4">{{ $service->title }}</h3>
+                        <div class="font-display text-4xl font-semibold text-cream leading-none mb-1">{{ $service->formattedPriceFor($currency) }}</div>
+                        @if($service->price_unit)
+                            <div class="font-mono text-[0.6875rem] text-cream-dim mb-6">{{ $service->price_unit }}</div>
+                        @endif
+                        <p class="text-sm text-cream-muted leading-relaxed font-light mb-6">{{ $service->description }}</p>
+                        @if($service->features)
+                            <ul class="flex-1 mb-8 space-y-2">
+                                @foreach($service->features as $feature)
+                                    <li class="flex items-start gap-2.5 text-sm text-cream-muted font-light">
+                                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0 mt-0.5 text-amber-brand"><path d="m3 7 3 3 5-6"/></svg>
+                                        {{ $feature }}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                        <a href="#contact" class="block w-full text-center py-3.5 font-mono text-[0.6875rem] font-semibold tracking-wider uppercase rounded-sm transition-all {{ $service->is_featured ? 'bg-amber-brand text-brand border border-amber-brand hover:bg-amber-light hover:shadow-[0_0_24px_rgba(212,160,23,0.15)]' : 'border border-white/10 text-cream-muted hover:border-amber-brand/25 hover:text-amber-brand' }}">{{ $service->cta_label }}</a>
                     </div>
                 @endforeach
             </div>
+            @endif
 
             <p class="rv text-center mt-8 text-sm text-cream-dim font-light">
                 Not sure which is right? <strong class="text-cream-muted font-medium">Book a free 30-minute discovery call</strong> and I'll recommend the best fit for your budget and timeline.

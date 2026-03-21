@@ -1,11 +1,46 @@
 <?php
 
+use App\Enums\Currency;
 use App\Enums\PostStatus;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome')->name('home');
+Route::get('/', function () {
+    $services = Service::active()->ordered()->get();
+
+    $currency = Currency::USD;
+    $timezone = request()->header('X-Timezone');
+    $locale = request()->getPreferredLanguage();
+    $country = request()->header('CF-IPCountry')
+        ?? request()->header('X-Country-Code')
+        ?? null;
+
+    if ($country) {
+        $currency = match (strtoupper($country)) {
+            'NG' => Currency::NGN,
+            'GB' => Currency::GBP,
+            'DE', 'FR', 'NL', 'BE', 'IT', 'ES', 'AT', 'IE', 'PT', 'FI' => Currency::EUR,
+            'CA' => Currency::CAD,
+            'AU' => Currency::AUD,
+            'ZA' => Currency::ZAR,
+            'GH' => Currency::GHS,
+            'KE' => Currency::KES,
+            default => Currency::USD,
+        };
+    } elseif ($locale) {
+        $currency = match (true) {
+            str_contains($locale, 'en-GB') || str_contains($locale, 'en_GB') => Currency::GBP,
+            str_contains($locale, 'en-CA') || str_contains($locale, 'en_CA') => Currency::CAD,
+            str_contains($locale, 'en-AU') || str_contains($locale, 'en_AU') => Currency::AUD,
+            str_contains($locale, 'de') || str_contains($locale, 'fr') || str_contains($locale, 'nl') => Currency::EUR,
+            default => Currency::USD,
+        };
+    }
+
+    return view('welcome', compact('services', 'currency'));
+})->name('home');
 
 Route::get('/blog', function () {
     $query = Post::where('status', PostStatus::Published)
