@@ -664,13 +664,65 @@
         </div>
     </section>
 
+    <!-- ─── The Team ──────────────────────────────────────────── -->
+    <section id="team" class="py-16 sm:py-28">
+        <div class="max-w-[1240px] mx-auto px-6 md:px-12">
+            <hr class="h-px border-0 bg-gradient-to-r from-amber-brand/25 via-white/[0.06] to-transparent">
+            <div class="pt-12">
+                <div class="rv">
+                    <span class="font-mono text-[0.6875rem] font-medium tracking-[0.15em] uppercase text-amber-brand flex items-center gap-4 mb-5">08 &mdash; The Team <span class="flex-1 max-w-16 h-px bg-amber-brand/25"></span></span>
+                    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-4">You Don't Hire One Person.<br>You Get a Whole Squad.</h2>
+                    <p class="text-base text-cream-muted max-w-[600px] font-light leading-relaxed">Behind every project is a tight-knit team of specialists who've shipped together for years. No freelancer roulette, no offshore mystery &mdash; just proven operators who move fast and build things that last.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.06] mt-12">
+                    @php
+                        $team = [
+                            ['role' => 'Backend Developer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<path d="M4 17l6-6-6-6M12 19h8"/>', 'desc' => 'APIs, database architecture, and server-side logic built to handle real-world scale. Laravel, PHP, Python &mdash; whatever the stack demands.'],
+                            ['role' => 'Frontend Developer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>', 'desc' => 'Pixel-perfect interfaces that feel fast and look sharp on every device. Vue.js, Livewire, Tailwind &mdash; the full modern frontend toolkit.'],
+                            ['role' => 'UI/UX Designer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<circle cx="13.5" cy="6.5" r="2.5"/><path d="M17 2a2.5 2.5 0 0 1 0 5"/><circle cx="8.5" cy="13.5" r="2.5"/><path d="M2 17.5a2.5 2.5 0 0 1 5 0"/><path d="M20 8.5a9 9 0 1 1-14.5 7"/>', 'desc' => 'Research-driven design that converts visitors into customers. Wireframes, prototypes, and design systems &mdash; not just pretty mockups.'],
+                            ['role' => 'Mobile Developer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>', 'desc' => 'Native and cross-platform mobile apps that feel like they belong on your home screen. iOS, Android, and everything in between.'],
+                            ['role' => 'App Tester / QA', 'type' => 'Contract', 'typeClass' => 'text-indigo-300 border-indigo-300/30', 'icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>', 'desc' => 'Every feature stress-tested before it reaches your users. Manual + automated testing, regression suites, and zero-tolerance for bugs in production.'],
+                        ];
+                    @endphp
+
+                    @foreach($team as $i => $member)
+                        <div class="rv rv-d{{ ($i % 3) + 1 }} bg-brand p-8 sm:p-10 hover:bg-brand-elevated transition-colors group">
+                            <div class="flex items-start justify-between mb-5">
+                                <div class="w-11 h-11 rounded border border-white/[0.08] flex items-center justify-center group-hover:border-amber-brand/25 transition-colors">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cream-dim group-hover:text-amber-brand transition-colors">{!! $member['icon'] !!}</svg>
+                                </div>
+                                <span class="font-mono text-[0.5625rem] font-medium tracking-wider uppercase px-2.5 py-1 border rounded-sm {{ $member['typeClass'] }}">{{ $member['type'] }}</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold text-cream mb-3 group-hover:text-amber-brand transition-colors">{{ $member['role'] }}</h3>
+                            <p class="text-sm text-cream-muted font-light leading-relaxed">{!! $member['desc'] !!}</p>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="rv mt-10 border border-white/[0.06] rounded p-8 sm:p-10 hover:border-amber-brand/25 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
+                        <div class="flex-1">
+                            <h3 class="font-display text-xl font-semibold text-cream mb-2">Why This Matters for You</h3>
+                            <p class="text-sm text-cream-muted font-light leading-relaxed">Most solo consultants outsource when they're overwhelmed. I built the team <em class="text-cream italic">before</em> the demand. Every engagement &mdash; from MVP sprints to enterprise builds &mdash; runs through the same battle-tested crew. You get startup speed with agency-grade execution, minus the agency price tag.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-amber-brand text-brand font-mono text-xs font-semibold tracking-wider uppercase rounded-sm hover:bg-amber-light hover:shadow-[0_0_40px_rgba(212,160,23,0.15)] hover:-translate-y-0.5 transition-all whitespace-nowrap shrink-0">
+                            Meet the Team
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10 5-5M5 5h5v5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ─── Contact ──────────────────────────────────────────── -->
     <section id="contact" class="py-16 sm:py-28 pb-12 sm:pb-20">
         <div class="max-w-[1240px] mx-auto px-6 md:px-12">
             <hr class="h-px border-0 bg-gradient-to-r from-amber-brand/25 via-white/[0.06] to-transparent">
             <div class="max-w-[650px] pt-12">
                 <div class="rv">
-                    <span class="font-mono text-[0.6875rem] font-medium tracking-[0.15em] uppercase text-amber-brand flex items-center gap-4 mb-5">08 &mdash; Next Step <span class="flex-1 max-w-16 h-px bg-amber-brand/25"></span></span>
+                    <span class="font-mono text-[0.6875rem] font-medium tracking-[0.15em] uppercase text-amber-brand flex items-center gap-4 mb-5">09 &mdash; Next Step <span class="flex-1 max-w-16 h-px bg-amber-brand/25"></span></span>
                     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-4">Ready to Ship?<br>Let's Talk.</h2>
                     <p class="text-base text-cream-muted max-w-[560px] font-light leading-relaxed">Tell me what you're building. I'll tell you honestly if I'm the right fit &mdash; and if I am, we'll have a plan before the call ends.</p>
                 </div>
