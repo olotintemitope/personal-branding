@@ -12,7 +12,7 @@
     <meta property="og:title" content="{{ $post->title }}">
     <meta property="og:description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
     <meta property="og:url" content="{{ route('blog.show', $post->slug) }}">
-    <meta property="og:image" content="{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}">
+    <meta property="og:image" content="{{ $post->hasMedia('featured_image') ? $post->getFirstMediaUrl('featured_image') : url('/images/blog-default-featured.jpg') }}">
     <meta property="og:site_name" content="Temitope Olotin">
     <meta property="article:published_time" content="{{ $post->published_at?->toIso8601String() }}">
     <meta property="article:author" content="Temitope Olotin">
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="{{ '@laztopaz_' }}">
     <meta name="twitter:title" content="{{ $post->title }}">
     <meta name="twitter:description" content="{{ $post->excerpt ?: Str::limit(strip_tags($post->content), 160) }}">
-    <meta name="twitter:image" content="{{ $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png') }}">
+    <meta name="twitter:image" content="{{ $post->hasMedia('featured_image') ? $post->getFirstMediaUrl('featured_image') : url('/images/blog-default-featured.jpg') }}">
 
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -45,7 +45,7 @@
             'dateModified' => $post->updated_at->toIso8601String(),
             'author' => ['@type' => 'Person', 'name' => $post->user->name ?? 'Temitope Olotin', 'url' => url('/')],
             'publisher' => ['@type' => 'Person', 'name' => 'Temitope Olotin', 'url' => url('/')],
-            'image' => $post->getFirstMediaUrl('featured_image') ?: url('/images/my-logo.png'),
+            'image' => $post->hasMedia('featured_image') ? $post->getFirstMediaUrl('featured_image') : url('/images/blog-default-featured.jpg'),
             'wordCount' => str_word_count(strip_tags($post->content)),
             'timeRequired' => 'PT' . $readingTime . 'M',
             'articleSection' => $post->category?->name,
@@ -210,7 +210,8 @@
                 {{-- Featured Image --}}
                 <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-0 mt-10">
                     <div class="relative aspect-[2/1] overflow-hidden rounded bg-brand-elevated">
-                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop&q=80' }}"
+                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: '/images/blog-default-featured.jpg' }}"
+                             onerror="this.onerror=null;this.src='/images/blog-default-featured.jpg'"
                              alt="{{ $post->title }}"
                              class="w-full h-full object-cover">
                     </div>
@@ -292,7 +293,8 @@
                             @foreach($relatedPosts as $related)
                                 <a href="{{ route('blog.show', $related->slug) }}" class="group flex flex-col bg-brand hover:bg-brand-elevated transition-all">
                                     <div class="relative aspect-[16/10] overflow-hidden bg-brand-elevated">
-                                        <img src="{{ $related->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop&q=80' }}"
+                                        <img src="{{ $related->getFirstMediaUrl('featured_image') ?: '/images/blog-default-card.jpg' }}"
+                                             onerror="this.onerror=null;this.src='/images/blog-default-card.jpg'"
                                              alt="{{ $related->title }}"
                                              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                                     </div>

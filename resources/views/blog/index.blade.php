@@ -130,7 +130,8 @@
                         <div class="grid md:grid-cols-2 min-h-[380px]">
                             {{-- Image --}}
                             <div class="relative overflow-hidden bg-brand-elevated">
-                                <img src="{{ $featured->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop&q=80' }}"
+                                <img src="{{ $featured->getFirstMediaUrl('featured_image') ?: '/images/blog-default-featured.jpg' }}"
+                                     onerror="this.onerror=null;this.src='/images/blog-default-featured.jpg'"
                                      alt="{{ $featured->title }}"
                                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                                 <div class="absolute top-5 left-5 z-10">
@@ -199,7 +200,8 @@
 
                                     {{-- Image --}}
                                     <div class="relative aspect-[16/10] overflow-hidden bg-brand-elevated">
-                                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop&q=80' }}"
+                                        <img src="{{ $post->getFirstMediaUrl('featured_image') ?: '/images/blog-default-card.jpg' }}"
+                                             onerror="this.onerror=null;this.src='/images/blog-default-card.jpg'"
                                              alt="{{ $post->title }}"
                                              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                                     </div>
