@@ -497,6 +497,19 @@
                             <p class="text-sm text-cream-muted leading-relaxed font-light">Nurturing the next generation of African software engineers through mentorship, code reviews, and technical guidance.</p>
                         </div>
 
+                        <a href="https://learnkasts.com/courses/a5f5eb7e-dc1a-46d6-9c97-67f29889e8ed" target="_blank" rel="noopener" class="rv block border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-9 h-9 rounded bg-amber-brand/10 border border-amber-brand/25 flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" class="text-amber-brand"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M6 13v2M10 13v2M4 15h8"/></svg>
+                                </div>
+                                <div>
+                                    <div class="font-display text-base font-semibold text-cream">LearnKasts Instructor</div>
+                                    <div class="font-mono text-[0.625rem] text-cream-dim tracking-wide">50+ students mentored &middot; Free live course</div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-cream-muted leading-relaxed font-light">Teaching "Modern Web Development with AI: From Frontend to Intelligent Applications" &mdash; an 8-week live course covering HTML, CSS, JavaScript, PHP, Laravel, Claude Code, Amazon Bedrock, and RAG applications.</p>
+                        </a>
+
                         <div class="rv border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-6">
                             <div class="flex items-center gap-3 mb-3">
                                 <div class="w-9 h-9 rounded bg-indigo-400/10 border border-indigo-400/20 flex items-center justify-center shrink-0">
