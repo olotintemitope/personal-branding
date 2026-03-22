@@ -683,6 +683,7 @@
                             ['role' => 'UI/UX Designer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<circle cx="13.5" cy="6.5" r="2.5"/><path d="M17 2a2.5 2.5 0 0 1 0 5"/><circle cx="8.5" cy="13.5" r="2.5"/><path d="M2 17.5a2.5 2.5 0 0 1 5 0"/><path d="M20 8.5a9 9 0 1 1-14.5 7"/>', 'desc' => 'Research-driven design that converts visitors into customers. Wireframes, prototypes, and design systems &mdash; not just pretty mockups.'],
                             ['role' => 'Mobile Developer', 'type' => 'Core Team', 'typeClass' => 'text-green-400 border-green-400/30', 'icon' => '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>', 'desc' => 'Native and cross-platform mobile apps that feel like they belong on your home screen. iOS, Android, and everything in between.'],
                             ['role' => 'App Tester / QA', 'type' => 'Contract', 'typeClass' => 'text-indigo-300 border-indigo-300/30', 'icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>', 'desc' => 'Every feature stress-tested before it reaches your users. Manual + automated testing, regression suites, and zero-tolerance for bugs in production.'],
+                            ['role' => 'Cloud Engineer', 'type' => 'Contract', 'typeClass' => 'text-indigo-300 border-indigo-300/30', 'icon' => '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>', 'desc' => 'Infrastructure that scales without surprises. AWS, CI/CD pipelines, Docker, and production deployments &mdash; so your app stays fast and your team sleeps at night.'],
                         ];
                     @endphp
 
@@ -690,7 +691,7 @@
                         <div class="rv rv-d{{ ($i % 3) + 1 }} bg-brand p-8 sm:p-10 hover:bg-brand-elevated transition-colors group">
                             <div class="flex items-start justify-between mb-5">
                                 <div class="w-11 h-11 rounded border border-white/[0.08] flex items-center justify-center group-hover:border-amber-brand/25 transition-colors">
-                                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cream-dim group-hover:text-amber-brand transition-colors">{!! $member['icon'] !!}</svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-cream-dim group-hover:text-amber-brand transition-colors">{!! $member['icon'] !!}</svg>
                                 </div>
                                 <span class="font-mono text-[0.5625rem] font-medium tracking-wider uppercase px-2.5 py-1 border rounded-sm {{ $member['typeClass'] }}">{{ $member['type'] }}</span>
                             </div>
