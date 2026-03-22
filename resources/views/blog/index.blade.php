@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Blog — Temitope Olotin | Software Engineering, AI & Laravel</title>
+    <title>Blog — Temitope Olotin | AI & Engineering</title>
     <meta name="description" content="Insights on software engineering, AI, Laravel, and building products — by Temitope Olotin.">
     <link rel="canonical" href="{{ url()->current() }}">
 

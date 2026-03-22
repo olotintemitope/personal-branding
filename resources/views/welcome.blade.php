@@ -75,14 +75,17 @@
 </head>
 <body class="font-body bg-brand text-cream antialiased overflow-x-hidden leading-relaxed">
 
+    <!-- Skip to main content (WCAG 2.4.1) -->
+    <a href="#hero" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-amber-brand focus:text-brand focus:rounded-sm focus:font-mono focus:text-sm focus:font-semibold">Skip to main content</a>
+
     <!-- Scroll progress -->
-    <div id="scrollBar" class="fixed top-0 left-0 h-0.5 bg-gradient-to-r from-amber-brand to-amber-light z-[200] w-0 transition-[width] duration-[50ms] linear"></div>
+    <div id="scrollBar" class="fixed top-0 left-0 h-0.5 bg-gradient-to-r from-amber-brand to-amber-light z-[200] w-0 transition-[width] duration-[50ms] linear" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 
     <!-- Grain -->
-    <div class="grain-overlay fixed inset-0 z-[9999] pointer-events-none opacity-[0.025] bg-repeat"></div>
+    <div class="grain-overlay fixed inset-0 z-[9999] pointer-events-none opacity-[0.025] bg-repeat" aria-hidden="true"></div>
 
     <!-- ─── Nav ──────────────────────────────────────────────── -->
-    <nav id="mainNav" class="fixed top-0 inset-x-0 z-100 py-3 sm:py-4 transition-all duration-400">
+    <nav id="mainNav" class="fixed top-0 inset-x-0 z-100 py-3 sm:py-4 transition-all duration-400" aria-label="Main navigation">
         <div class="max-w-[1240px] mx-auto px-6 md:px-12">
             <div class="flex items-center justify-between">
                 <a href="#" class="inline-flex items-center h-12 sm:h-16 lg:h-20">
@@ -122,13 +125,14 @@
         <a href="#contact" onclick="this.parentElement.classList.remove('open')" class="font-display text-3xl font-medium text-amber-brand transition-colors">Book a Call</a>
     </div>
 
+    <main>
     <!-- ─── Hero ─────────────────────────────────────────────── -->
     <section id="hero" class="min-h-screen flex items-center relative pt-28 pb-16 sm:pt-36 sm:pb-24">
         <!-- Glows -->
-        <div class="absolute -top-[15%] -right-[10%] w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle,rgba(212,160,23,0.15)_0%,transparent_65%)] animate-breathe pointer-events-none"></div>
-        <div class="absolute -bottom-[20%] -left-[15%] w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(212,160,23,0.06)_0%,transparent_70%)] animate-breathe-slow pointer-events-none"></div>
+        <div class="absolute -top-[15%] -right-[10%] w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle,rgba(212,160,23,0.15)_0%,transparent_65%)] animate-breathe pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute -bottom-[20%] -left-[15%] w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(212,160,23,0.06)_0%,transparent_70%)] animate-breathe-slow pointer-events-none" aria-hidden="true"></div>
         <!-- Diagonal lines -->
-        <div class="hero-diag-lines absolute inset-0 pointer-events-none"></div>
+        <div class="hero-diag-lines absolute inset-0 pointer-events-none" aria-hidden="true"></div>
 
         <div class="max-w-[1240px] mx-auto px-6 md:px-12 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-16 items-center">
@@ -753,6 +757,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- ─── Floating CTA ─────────────────────────────────────── -->
     <div id="floatCta" class="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-90 opacity-0 translate-y-4 transition-all duration-400 pointer-events-none [&.show]:opacity-100 [&.show]:translate-y-0 [&.show]:pointer-events-auto">

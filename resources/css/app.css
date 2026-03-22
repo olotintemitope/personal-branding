@@ -58,6 +58,23 @@
     50% { opacity: 0; }
 }
 
+/* WCAG focus-visible styles for keyboard navigation */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--color-amber-brand);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Respect reduced motion preference (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .rv { opacity: 1; transform: none; }
+}
+
 .animate-breathe { animation: breathe 8s ease-in-out infinite; }
 .animate-breathe-slow { animation: breathe 10s ease-in-out infinite 3s; }
 .animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
