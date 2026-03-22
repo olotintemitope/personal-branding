@@ -456,6 +456,19 @@
                             <p class="text-sm text-cream-muted leading-relaxed font-light">Pitched BeautySpace's booking and client-management platform at ATE 2024, headline-sponsored by MTN Nigeria and Fidelity Bank.</p>
                         </a>
 
+                        <a href="https://x.com/Startup_LC/status/1838945536738496904" target="_blank" rel="noopener" class="rv block border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-9 h-9 rounded bg-amber-brand/10 border border-amber-brand/25 flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" class="text-amber-brand"><circle cx="8" cy="8" r="6.5"/><path d="M8 5v3l2 2"/></svg>
+                                </div>
+                                <div>
+                                    <div class="font-display text-base font-semibold text-cream">Startup Growth Series &mdash; Building for Africa</div>
+                                    <div class="font-mono text-[0.625rem] text-cream-dim tracking-wide">X Space &middot; Startup LaunchCode &mdash; September 2024</div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-cream-muted leading-relaxed font-light">Featured speaker on a live X Space with innovators shaping Africa's future, discussing startup growth, product-market fit, and building tech solutions for the African market.</p>
+                        </a>
+
                         <h3 class="rv font-display text-lg font-semibold text-cream mt-8 mb-4">Mentoring</h3>
 
                         <div class="rv border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-4">
