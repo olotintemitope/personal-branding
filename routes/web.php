@@ -8,7 +8,11 @@ use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $services = Service::active()->ordered()->get();
+    try {
+        $services = Service::active()->ordered()->get();
+    } catch (\Exception $e) {
+        $services = collect();
+    }
 
     $currency = Currency::USD;
     $timezone = request()->header('X-Timezone');
