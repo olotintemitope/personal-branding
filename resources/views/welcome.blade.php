@@ -456,6 +456,19 @@
                             <p class="text-sm text-cream-muted leading-relaxed font-light">Pitched BeautySpace's booking and client-management platform at ATE 2024, headline-sponsored by MTN Nigeria and Fidelity Bank.</p>
                         </a>
 
+                        <a href="https://www.linkedin.com/posts/olotin-temitope-53b43272_today-is-the-day-its-finally-here-activity-7422182642793566208-PuVj/" target="_blank" rel="noopener" class="rv block border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-9 h-9 rounded bg-amber-brand/10 border border-amber-brand/25 flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" class="text-amber-brand"><path d="M12 2L2 7l10 5 10-5-10-5z" transform="scale(0.7) translate(3,3)"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5" transform="scale(0.7) translate(3,3)"/></svg>
+                                </div>
+                                <div>
+                                    <div class="font-display text-base font-semibold text-cream">AI Automation & The Future of Intelligent Applications</div>
+                                    <div class="font-mono text-[0.625rem] text-cream-dim tracking-wide">Webinar &middot; LearnKasts &mdash; January 2026</div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-cream-muted leading-relaxed font-light">Hosted a live webinar with guest speaker Fatai Hammed on transitioning from conventional software development to building intelligent, self-optimizing systems with AI automation.</p>
+                        </a>
+
                         <a href="https://x.com/Startup_LC/status/1838945536738496904" target="_blank" rel="noopener" class="rv block border border-white/[0.06] rounded p-6 hover:border-amber-brand/25 transition-colors mb-6">
                             <div class="flex items-center gap-3 mb-3">
                                 <div class="w-9 h-9 rounded bg-amber-brand/10 border border-amber-brand/25 flex items-center justify-center shrink-0">
