@@ -212,12 +212,12 @@
             <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-x-12 sm:gap-y-4">
                 <span class="font-mono text-[0.625rem] font-medium tracking-[0.15em] uppercase text-cream-faint whitespace-nowrap">Trusted by teams at</span>
                 <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">Andela</span>
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">Cause Strategy</span>
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">Waldo</span>
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">Accounteer</span>
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">BeautySpace</span>
-                    <span class="font-display text-lg font-semibold text-cream-dim opacity-70 hover:opacity-100 hover:text-amber-brand transition-all whitespace-nowrap">LearnKast</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">Andela</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">Cause Strategy</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">Waldo</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">Accounteer</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">BeautySpace</span>
+                    <span class="font-display text-lg font-semibold text-cream-dim hover:text-amber-brand transition-all whitespace-nowrap">LearnKast</span>
                 </div>
             </div>
         </div>
